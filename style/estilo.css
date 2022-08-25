@@ -34,13 +34,6 @@ h2, h3 {
   margin: 5px;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  margin: 10px;
-}
-
 p {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 18px;
@@ -51,35 +44,22 @@ p {
   margin: 10px;
 }
 
-/*MOBILE FIRST*/
-header {
+.navB {
   font-size: large;
-  display: flex;
-  flex-flow: row-reverse wrap;
-  justify-content: center;
   background-color: rgb(96, 108, 56);
   margin-bottom: 1em;
 }
 
-nav ul li {
-  list-style-type: none;
-  margin: 3px;
+a {
+  padding: 10px;
+  margin: 10px;
 }
 
 li:hover {
   transform: scale(1.2);
 }
 
-.imgInicio {
-  height: 100%;
-  width: 100%;
-  border-bottom: 2px solid rgb(96, 108, 56);
-  border-top: 2px solid rgb(96, 108, 56);
-  display: flex;
-  justify-content: center;
-}
-
-/*BATTLE*/
+/*MOBILE FIRST*/
 .imgBattle {
   grid-area: imgB;
 }
@@ -244,34 +224,29 @@ footer {
   margin-bottom: 0em;
   margin-top: 1em;
 }
-
-.navFooter {
-  display: flex;
-  justify-content: center;
-}
-
-.redes {
+footer .redes {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
-
-.icon:hover {
-  transform: scale(1.2);
-}
-
-.tituloFooter {
+footer .tituloFooter {
   margin: 1px;
   padding: 1px;
   text-align: center;
   font-weight: bolder;
 }
-
-.icon {
+footer .icon {
   height: 48px;
   width: 40px;
   margin: 2px;
+}
+footer .icon:hover {
+  transform: scale(1.2);
+}
+footer .navFooter {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 320px) {

@@ -1,0 +1,28 @@
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;            
+    font-size: 40px;                
+    text-align: center;
+    background-color: black;
+}
+
+h2, h3{
+    font-style: italic;
+    font-weight:bold;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    padding: 2px;
+    margin: 5px;  
+}
+
+p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin: 10px; 
+}

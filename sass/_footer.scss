@@ -1,0 +1,53 @@
+footer{
+    padding: 2em;
+    background-color: rgb(96, 108, 56);
+    margin-bottom: 0em;
+    margin-top: 1em;
+
+    .redes{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloFooter{    
+        margin: 1px;
+        padding: 1px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .icon{
+    height: 48px;
+    width: 40px;
+    margin: 2px;
+    }
+
+    .icon:hover{
+        transform: scale(1.2);
+    }
+
+    .navFooter{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
