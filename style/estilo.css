@@ -15,6 +15,20 @@ body {
   background-color: black;
 }
 
+.navB {
+  font-size: large;
+  background-color: rgb(96, 108, 56);
+  margin-bottom: 1em;
+}
+.navB li:hover {
+  transform: scale(1.2);
+}
+.navB a {
+  padding: 10px;
+  margin: 10px;
+}
+
+/*MOBILE FIRST*/
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
@@ -22,9 +36,26 @@ h1 {
   font-size: 40px;
   text-align: center;
   background-color: black;
+  padding: 10px;
+  margin-top: 20px;
+}
+@media (min-width: 320px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 480px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
 }
 
-h2, h3 {
+h2 {
   font-style: italic;
   font-weight: bold;
   font-size: 30px;
@@ -44,20 +75,6 @@ p {
   margin: 10px;
 }
 
-.navB {
-  font-size: large;
-  background-color: rgb(96, 108, 56);
-  margin-bottom: 1em;
-}
-.navB li:hover {
-  transform: scale(1.2);
-}
-.navB a {
-  padding: 10px;
-  margin: 10px;
-}
-
-/*MOBILE FIRST*/
 .imgBattle {
   grid-area: imgB;
 }
@@ -266,15 +283,6 @@ footer {
     width: 250px;
     border: 2px solid rgb(96, 108, 56);
   }
-  h1, .titO {
-    font-family: "Raleway", sans-serif;
-    font-weight: bolder;
-    font-size: 40px;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: black;
-  }
   /*TURORIALES*/
   iframe {
     border: 5px ridge rgb(96, 108, 56);
@@ -310,9 +318,6 @@ footer {
     border: 1px solid rgb(96, 108, 56);
     display: flex;
     justify-content: center;
-  }
-  h1 {
-    font-size: 45px;
   }
   h2 {
     text-align: center;
@@ -544,9 +549,6 @@ footer {
   .imgInicio {
     border-top: 5px ridge rgb(96, 108, 56);
     border-bottom: 5px ridge rgb(96, 108, 56);
-  }
-  h1 {
-    font-size: 60px;
   }
   h2 {
     font-size: 40px;
