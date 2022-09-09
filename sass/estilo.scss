@@ -2,48 +2,13 @@
 @import "generales";
 @import "titulosParrafos";
 @import "header";
-/*MOBILE FIRST*/
+@import "contacto";
+@import "operadores";
+@import "accesoriosInfaltables";
+@import "tutoriales";
 
-
-h1{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
-    text-decoration: underline;            
-    font-size: 40px;                
-    text-align: center;
-    background-color: black;
-    padding: 10px;
-    margin-top: 20px;
-
-    @media (min-width: 320px){            
-        font-size: 30px;
-    }
-    @media (min-width: 480px){
-        font-size: 35px;
-    }
-    @media (min-width: 1024px){
-        font-size: 60px;
-    }
-}
-
-h2{
-    font-style: italic;
-    font-weight:bold;
-    font-size: 30px;
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-    padding: 2px;
-    margin: 5px;  
-}
-
-p{
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 18px;
-    text-align: justify;
-    line-height: 1.6;
-    letter-spacing: 1px;
-    padding: 5px;
-    margin: 10px; 
+.divNav{
+    justify-content: center;
 }
 
 .imgBattle {
@@ -129,137 +94,52 @@ p{
     border-top: 2px solid rgb(96, 108, 56);
 }
 
-
-
-/*CONTACTO*/
-
-article{
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 14px;
-    text-align: justify;
-    line-height: 1.6;
-    letter-spacing: 1px;
-    padding: 5px;
-    margin-top: 20px;
-}
-
-textarea{
-    padding: 5px;
-    margin-left: 5px;
-}
-
-input{
-    padding: 5px;
-    margin: 10px;
-}
-
-/*OPERADORES*/
-
-.imgJacob{
-    border: 5px ridge rgb(96, 108, 56);
-    height: 350px;
-    width: 70%;
-    margin: 10px 0px 10px 0px;
-}
-
-.subJ, .subSkins{
-    text-align: center;
-}
-
-.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8{
-    border: 2px ridge rgb(96, 108, 56);
-    height: 200px;   
-}
-
-.text{
-    text-align: center;
-}
-
-.divJacob{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-
-/*ACCESORIOS INFALTABLES*/
-
-.imgAccInf{
-    height: 319px;
-    width: 300px;
-    background-size: 50px;
-    border-collapse: 1px;
-    border: 5px ridge rgb(96, 108, 56);    
-}
-
-.subtAcc{
-    text-align: center;
-}
-
-.imgSillaGamer{
-
-    background-size:50px ;
-    border-collapse: 1px;
-    border: 5px ridge rgb(96, 108, 56);
-    
-}
-
-/*TUTORIALES*/
-
-iframe{
-    margin: 20px;
-    border: 5px ridge rgb(96, 108, 56);
-}
-
-.flex-iframe{
-    display: flex;
-    flex-flow: row wrap ;
-    justify-content: center;
-}
-
-.linkTutoriales{
-    color: red;
-    padding: 0px;
-    margin: 0px;
-}
-
-/*PIE DE PAGINA*/
-
 footer{
     padding: 2em;
     background-color: rgb(96, 108, 56);
     margin-bottom: 0em;
-    margin-top: 1em;    
+    margin-top: 1em;
+
+    .redes{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloFooter{    
+        margin: 1px;
+        padding: 1px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .icon{
+        height: 48px;
+        width: 40px;
+        margin: 2px;
+    
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+        
+    .navFooter{
+        display: flex;
+        justify-content: center;
+
+        li:hover{
+            transform: scale(1.1);
+        }
+    }
+
 }
 
-.redes{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
 
-.tituloFooter{    
-    margin: 1px;
-    padding: 1px;
-    text-align: center;
-    font-weight: bolder;
-}
 
-.icon{
-    height: 48px;
-    width: 40px;
-    margin: 2px;
-}
 
-.icon:hover{
-    transform: scale(1.2);
-}
 
-.navFooter{
-    display: flex;
-    justify-content: center;
-}
+
 
 @media (min-width: 320px){
 

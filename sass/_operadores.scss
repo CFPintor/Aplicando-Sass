@@ -1,0 +1,25 @@
+.imgJacob{
+    border: 5px ridge rgb(96, 108, 56);
+    height: 350px;
+    width: 70%;
+    margin: 10px 0px 10px 0px;
+}
+
+.subJ, .subSkins{
+    text-align: center;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8{
+    border: 2px ridge rgb(96, 108, 56);
+    height: 200px;   
+}
+
+.text{
+    text-align: center;
+}
+
+.divJacob{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
