@@ -81,15 +81,22 @@ p {
   margin: 10px;
 }
 
+span {
+  font-style: italic;
+}
+
 .navB {
   font-size: large;
   background-color: rgb(96, 108, 56);
   margin-bottom: 1em;
 }
-.navB li:hover {
+.navB .divNav {
+  justify-content: center;
+}
+.navB .divNav li:hover {
   transform: scale(1.2);
 }
-.navB a {
+.navB .divNav a {
   padding: 10px;
   margin: 10px;
 }
@@ -114,53 +121,52 @@ input {
   margin: 10px;
 }
 
-.imgJacob {
+.artJacob h2 {
+  text-align: center;
+}
+.artJacob .divJacob {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.artJacob .divJacob img {
   border: 5px ridge rgb(96, 108, 56);
   height: 350px;
   width: 70%;
   margin: 10px 0px 10px 0px;
 }
 
-.subJ, .subSkins {
+.skins h3 {
   text-align: center;
 }
-
-.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 {
+.skins .img1, .skins .img2, .skins .img3, .skins .img4, .skins .img5, .skins .img6, .skins .img7, .skins .img8 {
   border: 2px ridge rgb(96, 108, 56);
   height: 200px;
 }
-
-.text {
+.skins p {
   text-align: center;
 }
 
-.divJacob {
+.flex-Acc {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-
-.imgAccInf {
+.flex-Acc h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.flex-Acc .imgAccInf {
   height: 319px;
   width: 300px;
   background-size: 50px;
   border-collapse: 1px;
-  border: 5px ridge rgb(96, 108, 56);
+  border: 1px ridge rgb(96, 108, 56);
 }
-
-.subtAcc {
-  text-align: center;
-}
-
-.imgSillaGamer {
+.flex-Acc .imgSillaGamer {
   background-size: 50px;
   border-collapse: 1px;
-  border: 5px ridge rgb(96, 108, 56);
-}
-
-iframe {
-  margin: 20px;
-  border: 5px ridge rgb(96, 108, 56);
+  border: 1px ridge rgb(96, 108, 56);
 }
 
 .flex-iframe {
@@ -168,54 +174,33 @@ iframe {
   flex-flow: row wrap;
   justify-content: center;
 }
+.flex-iframe h2 {
+  text-align: center;
+  padding: 0px;
+}
+.flex-iframe iframe {
+  margin: 20px;
+  border: 1px solid rgb(96, 108, 56);
+}
+@media (min-width: 320px) {
+  .flex-iframe iframe {
+    border: 1px solid rgb(96, 108, 56);
+  }
+}
+@media (min-width: 480px) {
+  .flex-iframe iframe {
+    border: 2px solid rgb(96, 108, 56);
+  }
+}
 
-.linkTutoriales {
+.artTutoriales h2 {
+  text-align: center;
+  padding: 0px;
+}
+.artTutoriales .linkTutoriales {
   color: red;
   padding: 0px;
   margin: 0px;
-}
-
-.divNav {
-  justify-content: center;
-}
-
-.imgBattle {
-  grid-area: imgB;
-}
-
-.titBattle {
-  grid-area: titB;
-  text-align: center;
-}
-
-.textBattle {
-  grid-area: textB;
-}
-
-/*SAQUEO*/
-.imgSaqueo {
-  grid-area: imgS;
-}
-
-.titSaqueo {
-  grid-area: titS;
-}
-
-.textSaqueo {
-  grid-area: textS;
-}
-
-/*RENACIMIENTO*/
-.imgRenacimiento {
-  grid-area: imgR;
-}
-
-.titRenacimiento {
-  grid-area: titR;
-}
-
-.textRenacimiento {
-  grid-area: textR;
 }
 
 .gridB {
@@ -224,6 +209,20 @@ iframe {
   grid-template-columns: 1fr;
   grid-template-areas: "titB" "imgB" "textB";
   gap: 10px;
+}
+.gridB .imgBattle {
+  grid-area: imgB;
+  height: 250px;
+  width: 250px;
+  border-bottom: 2px solid rgb(96, 108, 56);
+  border-top: 2px solid rgb(96, 108, 56);
+}
+.gridB .titBattle {
+  grid-area: titB;
+  text-align: center;
+}
+.gridB .textBattle {
+  grid-area: textB;
 }
 
 .gridS {
@@ -234,6 +233,19 @@ iframe {
   grid-template-areas: "titS" "imgS" "textS";
   gap: 10px;
 }
+.gridS .imgSaqueo {
+  grid-area: imgS;
+  height: 250px;
+  width: 250px;
+  border-bottom: 2px solid rgb(96, 108, 56);
+  border-top: 2px solid rgb(96, 108, 56);
+}
+.gridS .titSaqueo {
+  grid-area: titS;
+}
+.gridS .textSaqueo {
+  grid-area: textS;
+}
 
 .gridR {
   display: grid;
@@ -243,12 +255,18 @@ iframe {
   grid-template-areas: "titR" "imgR" "textR";
   gap: 10px;
 }
-
-.imgBattle, .imgSaqueo, .imgRenacimiento {
+.gridR .imgRenacimiento {
+  grid-area: imgR;
   height: 250px;
   width: 250px;
   border-bottom: 2px solid rgb(96, 108, 56);
   border-top: 2px solid rgb(96, 108, 56);
+}
+.gridR .titRenacimiento {
+  grid-area: titR;
+}
+.gridR .textRenacimiento {
+  grid-area: textR;
 }
 
 footer {
@@ -281,7 +299,7 @@ footer .navFooter {
   display: flex;
   justify-content: center;
 }
-footer .navFooter li:hover {
+footer .navFooter:hover {
   transform: scale(1.1);
 }
 
@@ -299,16 +317,6 @@ footer .navFooter li:hover {
     width: 250px;
     border: 2px solid rgb(96, 108, 56);
   }
-  /*TURORIALES*/
-  iframe {
-    border: 5px ridge rgb(96, 108, 56);
-  }
-  /*ACCESORIOS INFALTABLES*/
-  .flex-Acc {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
   /*OPERADORES*/
   .imgJacob {
     border: 5px ridge rgb(96, 108, 56);
@@ -316,15 +324,9 @@ footer .navFooter li:hover {
     width: 70%;
     margin: 10px 0px 10px 0px;
   }
-  .subJ, .subSkins {
-    text-align: center;
-  }
   .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 {
     border: 2px ridge rgb(96, 108, 56);
     height: 200px;
-  }
-  .text {
-    text-align: center;
   }
 }
 @media (min-width: 480px) {
@@ -334,16 +336,6 @@ footer .navFooter li:hover {
     border: 1px solid rgb(96, 108, 56);
     display: flex;
     justify-content: center;
-  }
-  h2 {
-    text-align: center;
-    font-size: 40px;
-  }
-  .flex-header {
-    display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: space-around;
-    margin: 30px;
   }
   .imgSaqueo, .imgRenacimiento {
     height: 300px;

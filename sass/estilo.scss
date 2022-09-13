@@ -7,52 +7,26 @@
 @import "accesoriosInfaltables";
 @import "tutoriales";
 
-.divNav{
-    justify-content: center;
-}
-
-.imgBattle {
-    grid-area: imgB;
-}
-
-.titBattle{
-    grid-area: titB;
-    text-align: center;
-}
-
-.textBattle{
-    grid-area: textB;
-}
-
-/*SAQUEO*/
-
-.imgSaqueo{
-    grid-area: imgS;
-}
-
-.titSaqueo{
-    grid-area: titS;
-}
-
-.textSaqueo{
-    grid-area: textS;
-}
-
-/*RENACIMIENTO*/
-
-.imgRenacimiento{
-    grid-area: imgR;
-}
-
-.titRenacimiento{
-    grid-area: titR;
-}
-
-.textRenacimiento{
-    grid-area: textR;
-}
 
 .gridB{
+
+    .imgBattle {
+        grid-area: imgB;
+        height: 250px;
+        width: 250px;
+        border-bottom: 2px solid rgb(96, 108, 56);
+        border-top: 2px solid rgb(96, 108, 56);
+    }
+    
+    .titBattle{
+        grid-area: titB;
+        text-align: center;
+    }
+    
+    .textBattle{
+        grid-area: textB;
+    }
+    
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;
@@ -61,9 +35,27 @@
     "imgB" 
     "textB";
     gap: 10px;
+
 }
 
 .gridS{
+
+    .imgSaqueo{
+        grid-area: imgS;
+        height: 250px;
+        width: 250px;
+        border-bottom: 2px solid rgb(96, 108, 56);
+        border-top: 2px solid rgb(96, 108, 56);
+    }
+    
+    .titSaqueo{
+        grid-area: titS;
+    }
+    
+    .textSaqueo{
+        grid-area: textS;
+    }
+
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -76,6 +68,23 @@
 }
 
 .gridR{
+    
+    .imgRenacimiento{
+        grid-area: imgR;
+        height: 250px;
+        width: 250px;
+        border-bottom: 2px solid rgb(96, 108, 56);
+        border-top: 2px solid rgb(96, 108, 56);
+    }
+    
+    .titRenacimiento{
+        grid-area: titR;
+    }
+    
+    .textRenacimiento{
+        grid-area: textR;
+    }
+    
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -87,12 +96,6 @@
     gap: 10px;
 }
 
-.imgBattle, .imgSaqueo, .imgRenacimiento{
-    height: 250px;
-    width: 250px;
-    border-bottom: 2px solid rgb(96, 108, 56);
-    border-top: 2px solid rgb(96, 108, 56);
-}
 
 footer{
     padding: 2em;
@@ -128,7 +131,7 @@ footer{
         display: flex;
         justify-content: center;
 
-        li:hover{
+        &:hover{
             transform: scale(1.1);
         }
     }
@@ -157,23 +160,7 @@ footer{
         height: 250px;
         width: 250px;
         border: 2px solid rgb(96, 108, 56);
-    }
-
-    
-
-    /*TURORIALES*/
-
-    iframe{
-        border: 5px ridge rgb(96, 108, 56);
-    }
-
-    /*ACCESORIOS INFALTABLES*/
-
-    .flex-Acc{
-        display: flex;
-        flex-flow: row wrap ;
-        justify-content: center;
-    }
+    }    
 
     /*OPERADORES*/
 
@@ -184,17 +171,9 @@ footer{
         margin: 10px 0px 10px 0px;
     }
 
-    .subJ, .subSkins{
-        text-align: center;
-    }
-
     .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8{
         border: 2px ridge rgb(96, 108, 56);
         height: 200px;   
-    }
-
-    .text{
-        text-align: center;
     }
 
 }
@@ -206,18 +185,6 @@ footer{
         border: 1px solid rgb(96, 108, 56);
         display: flex;
         justify-content: center;
-    }
-
-    h2{
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .flex-header{   
-        display: flex;
-        flex-flow: row-reverse wrap;
-        justify-content: space-around;
-        margin: 30px;
     }
 
     .imgSaqueo, .imgRenacimiento{

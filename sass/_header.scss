@@ -3,14 +3,22 @@
     background-color: rgb(96, 108, 56);
     margin-bottom: 1em;
 
-    li:hover{
-        transform: scale(1.2) ;
+    .divNav{
+        justify-content: center;
+
+        li:hover{
+            transform: scale(1.2) ;
+        }
+    
+        a{
+            padding: 10px;
+            margin: 10px;
+        }
+
+
     }
 
-    a{
-        padding: 10px;
-        margin: 10px;
-    }
+    
 }
 
 
