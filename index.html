@@ -62,10 +62,19 @@
 
     <!--TITULO-->
     
-        
-        <div class="divInicio"> 
-            <img class="imgInicio" src="./imagenes/Call-of-duty-modern-warfare-y-warzone-temporada-4-Gamersrd.jpeg" loading="lazy" alt="Soldados armados">
-        </div>         
+        <picture>
+
+           <source srcset="./imagenes/Call-of-duty-320.jpeg" media="(min-width: 320px) and (max-width:479px)" alt="Soldados con Armas">
+
+           <source srcset="./imagenes/Call-of-duty-480.jpeg" media="(min-width: 480px) and (max-width:599px)" alt="Soldados con Armas">
+
+           <source srcset="./imagenes/Call-of-duty-600.jpeg" media="(min-width: 599px) and (max-width:767px)" alt="Soldados con Armas">
+
+           <source srcset ="./imagenes/Call-of-duty-768.jpeg " media="(min-width: 768px) and (max-width:1023px)" alt="Soldados con Armas">
+
+           <img src="./imagenes/Call-of-duty-1024.jpeg" loading="lazy" alt="Soldados con Armas">     
+            
+        </picture>
     
         <main>
 
@@ -123,9 +132,9 @@
             
 
             <article class="redes">
+
                 <h3 class="tituloFooter">Seguinos en nuestras Redes Sociales</h3>
                 
-
                 <a href="https://www.facebook.com" target="_blank"><img class="icon" src="./imagenes/faceFooter.svg" alt="Logo Facebook"></a>
 
                 <a href="https://www.instagram.com" target="_blank"><img class="icon" src="./imagenes/instaFooter.svg" alt="Logo Instagram"></a>

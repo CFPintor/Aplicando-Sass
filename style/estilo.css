@@ -15,6 +15,16 @@ body {
   background-color: black;
 }
 
+/*EXTEND*/
+.bordeGral, .skins .img1, .skins .img2, .skins .img3, .skins .img4, .skins .img5, .skins .img6, .skins .img7, .skins .img8 {
+  border: 2px ridge rgb(96, 108, 56);
+}
+
+.bordeImg, .artJacob .divJacob img {
+  border: 5px ridge rgb(96, 108, 56);
+}
+
+/*MIXIN*/
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
@@ -67,7 +77,7 @@ h2, h3 {
 }
 @media (min-width: 768px) {
   h2, h3 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -130,10 +140,23 @@ input {
   justify-content: center;
 }
 .artJacob .divJacob img {
-  border: 5px ridge rgb(96, 108, 56);
   height: 350px;
   width: 70%;
   margin: 10px 0px 10px 0px;
+}
+@media (min-width: 320px) {
+  .artJacob .divJacob img {
+    border: 5px ridge rgb(96, 108, 56);
+    height: 350px;
+    width: 70%;
+    margin: 10px 0px 10px 0px;
+  }
+}
+@media (min-width: 480px) {
+  .artJacob .divJacob img {
+    height: auto;
+    width: auto;
+  }
 }
 @media (min-width: 768px) {
   .artJacob .divJacob img {
@@ -184,12 +207,10 @@ input {
 }
 
 .skins .img1, .skins .img2, .skins .img3, .skins .img4, .skins .img5, .skins .img6, .skins .img7, .skins .img8 {
-  border: 2px ridge rgb(96, 108, 56);
   height: 200px;
 }
 @media (min-width: 768px) {
   .skins .img1, .skins .img2, .skins .img3, .skins .img4, .skins .img5, .skins .img6, .skins .img7, .skins .img8 {
-    border: 2px ridge rgb(96, 108, 56);
     height: 200px;
     width: 150px;
   }
@@ -284,12 +305,33 @@ input {
   grid-template-areas: "titB" "imgB" "textB";
   gap: 10px;
 }
-.gridB .imgBattle {
+@media (min-width: 768px) {
+  .gridB .divBattle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-around;
+  }
+}
+.gridB .divBattle .imgBattle {
   grid-area: imgB;
   height: 250px;
   width: 250px;
   border-bottom: 2px solid rgb(96, 108, 56);
   border-top: 2px solid rgb(96, 108, 56);
+}
+@media (min-width: 320px) {
+  .gridB .divBattle .imgBattle {
+    height: 250px;
+    width: 250px;
+    border: 2px solid rgb(96, 108, 56);
+  }
+}
+@media (min-width: 480px) {
+  .gridB .divBattle .imgBattle {
+    height: 350px;
+  }
 }
 .gridB .titBattle {
   grid-area: titB;
@@ -297,6 +339,24 @@ input {
 }
 .gridB .textBattle {
   grid-area: textB;
+}
+@media (min-width: 768px) {
+  .gridB .textBattle {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .gridB {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    grid-template-areas: "titB titB" "imgB textB";
+    gap: 10px;
+  }
 }
 
 .gridS {
@@ -307,18 +367,79 @@ input {
   grid-template-areas: "titS" "imgS" "textS";
   gap: 10px;
 }
-.gridS .imgSaqueo {
+@media (min-width: 480px) {
+  .gridS div {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .gridS div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 3px;
+  }
+}
+.gridS div .imgSaqueo {
   grid-area: imgS;
   height: 250px;
   width: 250px;
   border-bottom: 2px solid rgb(96, 108, 56);
   border-top: 2px solid rgb(96, 108, 56);
 }
+@media (min-width: 320px) {
+  .gridS div .imgSaqueo {
+    height: 250px;
+    width: 250px;
+    border: 2px solid rgb(96, 108, 56);
+  }
+}
+@media (min-width: 480px) {
+  .gridS div .imgSaqueo {
+    height: 300px;
+    width: 70%;
+  }
+}
+@media (min-width: 600px) {
+  .gridS div .imgSaqueo {
+    height: 280px;
+    width: 70%;
+    border: 3px solid rgb(96, 108, 56);
+  }
+}
+@media (min-width: 768px) {
+  .gridS div .imgSaqueo {
+    height: 97%;
+    width: 98%;
+    border-collapse: 1px;
+    border: 5px ridge rgb(96, 108, 56);
+  }
+}
 .gridS .titSaqueo {
   grid-area: titS;
 }
 .gridS .textSaqueo {
   grid-area: textS;
+}
+@media (min-width: 768px) {
+  .gridS .textSaqueo {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .gridS {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-template-rows: 26% 66%;
+    justify-content: center;
+    grid-template-areas: "titS titS" "imgS textS";
+    gap: 10px;
+  }
 }
 
 .gridR {
@@ -329,18 +450,71 @@ input {
   grid-template-areas: "titR" "imgR" "textR";
   gap: 10px;
 }
-.gridR .imgRenacimiento {
+@media (min-width: 480px) {
+  .gridR div {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 480px) and (min-width: 768px) {
+  .gridR div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 3px;
+  }
+}
+.gridR div .imgRenacimiento {
   grid-area: imgR;
   height: 250px;
   width: 250px;
   border-bottom: 2px solid rgb(96, 108, 56);
   border-top: 2px solid rgb(96, 108, 56);
 }
+@media (min-width: 320px) {
+  .gridR div .imgRenacimiento {
+    height: 250px;
+    width: 250px;
+    border: 2px solid rgb(96, 108, 56);
+  }
+}
+@media (min-width: 480px) {
+  .gridR div .imgRenacimiento {
+    height: 300px;
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .gridR div .imgRenacimiento {
+    height: 300px;
+    width: 98%;
+    border-collapse: 1px;
+    border: 5px ridge rgb(96, 108, 56);
+  }
+}
 .gridR .titRenacimiento {
   grid-area: titR;
 }
 .gridR .textRenacimiento {
   grid-area: textR;
+}
+@media (min-width: 768px) {
+  .gridR .textRenacimiento {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .gridR {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-template-rows: 16% 82%;
+    justify-content: center;
+    grid-template-areas: "titR titR" "imgR textR";
+  }
 }
 
 footer {
@@ -349,11 +523,21 @@ footer {
   margin-bottom: 0em;
   margin-top: 1em;
 }
+@media (min-width: 1024px) {
+  footer {
+    display: grid;
+    grid-template-areas: "redes navFooter";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    align-items: center;
+  }
+}
 footer .redes {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  grid-area: redes;
 }
 @media (min-width: 480px) {
   footer .redes {
@@ -395,184 +579,8 @@ footer .icon:hover {
 footer .navFooter {
   display: flex;
   justify-content: center;
+  grid-area: navFooter;
 }
 footer .navFooter li:hover {
   transform: scale(1.2);
-}
-
-@media (min-width: 320px) {
-  /*INICIO*/
-  .imgInicio {
-    height: 320px;
-    width: 99.5%;
-    border: 1px solid rgb(96, 108, 56);
-    display: flex;
-    justify-content: center;
-  }
-  .imgBattle, .imgSaqueo, .imgRenacimiento {
-    height: 250px;
-    width: 250px;
-    border: 2px solid rgb(96, 108, 56);
-  }
-  /*OPERADORES*/
-  .imgJacob {
-    border: 5px ridge rgb(96, 108, 56);
-    height: 350px;
-    width: 70%;
-    margin: 10px 0px 10px 0px;
-  }
-  .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 {
-    border: 2px ridge rgb(96, 108, 56);
-    height: 200px;
-  }
-}
-@media (min-width: 480px) {
-  .imgInicio {
-    height: 350px;
-    width: 99.5%;
-    border: 1px solid rgb(96, 108, 56);
-    display: flex;
-    justify-content: center;
-  }
-  .imgSaqueo, .imgRenacimiento {
-    height: 300px;
-    width: 70%;
-  }
-  .imgBattle {
-    height: 350px;
-  }
-  .divSaqueo, .divRenacimiento {
-    display: flex;
-    justify-content: center;
-  }
-  /*OPERADORES*/
-  .imgJacob {
-    height: auto;
-    width: auto;
-  }
-}
-@media (min-width: 600px) {
-  /*INICIO*/
-  .imgInicio {
-    height: 420px;
-    width: 99.7%;
-    border: 1px solid rgb(96, 108, 56);
-    display: flex;
-    justify-content: center;
-  }
-  .imgSaqueo {
-    height: 300px;
-    width: 70%;
-    border: 3px solid rgb(96, 108, 56);
-  }
-  /*OPERADORES*/
-}
-@media (min-width: 768px) {
-  .imgInicio {
-    height: 500px;
-    width: 99.8%;
-    border: 1px solid rgb(96, 108, 56);
-    display: flex;
-    justify-content: center;
-  }
-  /*BATTLE*/
-  .imgBattle {
-    height: 320px;
-    width: 250px;
-    border-collapse: 1px;
-    border: 5px ridge rgb(96, 108, 56);
-  }
-  .gridB {
-    display: grid;
-    grid-template-columns: 35% 60%;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    grid-template-areas: "titB titB" "imgB textB";
-    gap: 10px;
-  }
-  .divBattle {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    justify-content: space-around;
-  }
-  /*SAQUEO*/
-  .gridS {
-    display: grid;
-    grid-template-columns: 35% 60%;
-    grid-template-rows: 26% 66%;
-    justify-content: center;
-    grid-template-areas: "titS titS" "imgS textS";
-    gap: 10px;
-  }
-  .imgSaqueo {
-    height: 97%;
-    width: 98%;
-    border-collapse: 1px;
-    border: 5px ridge rgb(96, 108, 56);
-  }
-  .textSaqueo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .divSaqueo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 3px;
-  }
-  /*RENACIMIENTO*/
-  .gridR {
-    display: grid;
-    grid-template-columns: 35% 60%;
-    grid-template-rows: 16% 82%;
-    justify-content: center;
-    grid-template-areas: "titR titR" "imgR textR";
-  }
-  .imgRenacimiento {
-    height: 300px;
-    width: 98%;
-    border-collapse: 1px;
-    border: 5px ridge rgb(96, 108, 56);
-  }
-  .divRenacimiento {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 3px;
-  }
-  .textBattle, .textRenacimiento, .textSaqueo {
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-@media (min-width: 1024px) {
-  /*INCIO*/
-  .imgInicio {
-    border-top: 5px ridge rgb(96, 108, 56);
-    border-bottom: 5px ridge rgb(96, 108, 56);
-  }
-  h2 {
-    font-size: 40px;
-  }
-  /*FOOTER*/
-  .redes {
-    grid-area: redes;
-  }
-  .navFooter {
-    grid-area: navFooter;
-  }
-  footer {
-    display: grid;
-    grid-template-areas: "redes navFooter";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    align-items: center;
-  }
 }/*# sourceMappingURL=estilo.css.map */

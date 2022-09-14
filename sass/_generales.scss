@@ -13,3 +13,28 @@ body{
     color: white;
     background-color: black;
 }
+
+/*EXTEND*/
+
+.bordeGral{
+    border: 2px ridge rgb(96, 108, 56);
+}
+
+.bordeImg{
+    border: 5px ridge rgb(96, 108, 56);
+}
+
+/*MIXIN*/
+
+@mixin dimensiones ($width,$height){
+    height: $height;
+    width: $width;
+}
+
+@mixin alto($height) {
+    height: $height;
+}
+
+@mixin ancho($width) {
+    width: $width;
+}
