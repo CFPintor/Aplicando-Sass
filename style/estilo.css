@@ -20,7 +20,7 @@ body {
   border: 2px ridge rgb(96, 108, 56);
 }
 
-.bordeImg, .artJacob .divJacob img {
+.bordeImg {
   border: 5px ridge rgb(96, 108, 56);
 }
 
@@ -111,7 +111,7 @@ span {
   margin: 10px;
 }
 
-article {
+form {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 14px;
   text-align: justify;
@@ -120,49 +120,45 @@ article {
   padding: 5px;
   margin-top: 20px;
 }
-
-textarea {
-  padding: 5px;
-  margin-left: 5px;
+form .nomAp {
+  margin: 0px 20px 20px 20px;
+  padding: 10px;
 }
-
-input {
-  padding: 5px;
-  margin: 10px;
+form .nomAp label {
+  padding: 10px 10px 10px 0px;
+}
+form .edad {
+  margin: 0px 20px 20px 20px;
+  padding: 10px;
+}
+form .edad label {
+  padding: 10px 10px 10px 0px;
+}
+form .correo {
+  margin: 0px 20px 20px 20px;
+  padding: 10px;
+}
+form .correo label {
+  padding: 10px 10px 10px 0px;
+}
+form .comentario {
+  margin: 0px 20px 20px 20px;
+  padding: 10px;
+}
+form .comentario textarea {
+  padding: 10px 10px 10px 0px;
+}
+form .boton {
+  margin: 0px 20px 20px 20px;
+  padding: 10px;
 }
 
 .artJacob h2 {
   text-align: center;
 }
-.artJacob .divJacob {
+.artJacob .picJacob {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
-}
-.artJacob .divJacob img {
-  height: 350px;
-  width: 70%;
-  margin: 10px 0px 10px 0px;
-}
-@media (min-width: 320px) {
-  .artJacob .divJacob img {
-    border: 5px ridge rgb(96, 108, 56);
-    height: 350px;
-    width: 70%;
-    margin: 10px 0px 10px 0px;
-  }
-}
-@media (min-width: 480px) {
-  .artJacob .divJacob img {
-    height: auto;
-    width: auto;
-  }
-}
-@media (min-width: 768px) {
-  .artJacob .divJacob img {
-    height: 40%;
-    width: 30%;
-  }
 }
 
 .subSkins {
@@ -242,26 +238,9 @@ input {
   }
 }
 
-.flex-Acc {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.flex-Acc h2 {
+h2 {
   text-align: center;
   margin-bottom: 15px;
-}
-.flex-Acc .imgAccInf {
-  height: 319px;
-  width: 300px;
-  background-size: 50px;
-  border-collapse: 1px;
-  border: 1px ridge rgb(96, 108, 56);
-}
-.flex-Acc .imgSillaGamer {
-  background-size: 50px;
-  border-collapse: 1px;
-  border: 1px ridge rgb(96, 108, 56);
 }
 
 .flex-iframe {

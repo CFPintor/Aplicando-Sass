@@ -4,10 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../imagenes/faviconMwz.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../imagenes/Inicio/faviconMwz.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="../style/estilo.css">
         <title>Contacto</title>
+        <meta name="description" content="Contactanos para conocerte un poco mas.">
+        <meta name="author" content="Carlos Fernando Pintor">
+        <meta name="copyright" content="Mundo Warzone">
     </head>
 
 <body>
@@ -17,7 +20,7 @@
     
             <div class="container-fluid d-flex justify-content-center">
     
-                <a class="navbar-brand" href="../index.html"><img class="w-100" src="../imagenes/icons8-call-of-duty-warzone-100.png" alt="Logo Mundo Warzone"></a>
+                <a class="navbar-brand" href="../index.html"><img class="w-100" src="../imagenes/Inicio/icons8-call-of-duty-warzone-100.png" alt="Logo Mundo Warzone"></a>
     
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
     
@@ -59,52 +62,43 @@
      
 	
     <!-- formulario de contacto -->
-	<main class="">
+	<main>
+
         <h1>CONTACTO</h1>
 
-		    <article>
-			 <form action="#">
-                <label for="nombre_apellido">Ingrese Nombre y Apellido</label>
-                <input type="text" name="nombre_apellido" />
-                
-                
-                <label for="edad">Ingrese Edad</label>
-                <input type="number" name="edad" />
-                
-                
-                <label for="observaciones">Ingrese dudas</label>
-                
-                <textarea type="text" name="observaciones" ></textarea>
-               
-                
-                <input type="submit" value="Enviar info">
-                <input type="reset" value="Borrar info">
-              
-                <div>Hombre</div>
-                <input type="radio" name="sexo" value="Hombre" />
-                <div>Mujer</div>
-                <input type="radio" name="Mujer" />
-                                         
+        <p>Aquí podras contactarnos y dejarnos tus opiniones.</p>
 
-                <select name="talles">
-                    
-                     <option value="L">LARGE</option>
-                     <option value="M">MEDIUM</option>
-                     <option value="S">SMALL</option>
-                     
-                     
-                </select>
-                    <div>Acepta términos y condiciones</div>
-                    
-                    <input type="checkbox" name="acepta" value="1" />
-                    
-                    <input type="submit" value="Enviar info" />
-
-			     
-		
-            </article>
-    
     </main>
+
+		    <form>
+
+			    <div class="nomAp">
+                    <label for="nombre_apellido">Nombre y Apellido:</label>
+                    <input type="text" name="nombre_apellido" placeholder="Juan Perez"/>
+                </div>
+                
+                <div class="edad">
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad"/>
+                </div>
+
+                <div class="correo">
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" name="e-mail" placeholder="juanperez@gmail.com"/>
+                </div>
+
+                <div class="comentario">
+                    <label for="observaciones">Comentario:</label>                
+                    <textarea type="text" name="observaciones" placeholder="Ingrese comentario"></textarea>
+                </div>
+
+                <div class="boton">
+                    <input type="submit">
+                </div>
+		
+            </form>
+    
+    
     
     <footer>
 
@@ -112,15 +106,15 @@
 
             <p class="tituloFooter">Seguinos en nuestras Redes Sociales</p>
 
-            <a href="https://www.facebook.com" target="_blank"><img class="icon" src="./imagenes/faceFooter.svg" alt="Logo Facebook"></a>
+            <a href="https://www.facebook.com" target="_blank"><img class="icon" src="../imagenes/faceFooter.svg" alt="Logo Facebook"></a>
 
-            <a href="https://www.instagram.com" target="_blank"><img class="icon" src="./imagenes/instaFooter.svg" alt="Logo Instagram"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="icon" src="../imagenes/instaFooter.svg" alt="Logo Instagram"></a>
 
-            <a href="https://www.youtube.com" target="_blank"><img class="icon" src="./imagenes/ytbFooter.svg" alt="Logo YouTube"></a>
+            <a href="https://www.youtube.com" target="_blank"><img class="icon" src="../imagenes/ytbFooter.svg" alt="Logo YouTube"></a>
 
-            <a href="https://www.tiktok.com" target="_blank"><img class="icon" src="./imagenes/tiktokFooter.svg" alt="Logo TikTok"></a>
+            <a href="https://www.tiktok.com" target="_blank"><img class="icon" src="../imagenes/tiktokFooter.svg" alt="Logo TikTok"></a>
 
-            <a href="https://twitch.com" target="_blank"><img class="icon" src="./imagenes/twitchFooter.svg" alt="Logo Twitch"></a>
+            <a href="https://twitch.com" target="_blank"><img class="icon" src="../imagenes/twitchFooter.svg" alt="Logo Twitch"></a>
 
         </article>
 
